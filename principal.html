@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Playeras - Nobleza </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000, #444);
+      color: white;
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffcc00;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Hero principal */
+    .hero {
+      background: url("https://images.unsplash.com/photo-1520975922058-6b2a786e1f5f") no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #ffaa00;
+    }
+
+    /* Productos */
+    .productos {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .productos h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .colores {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: 2px solid #ccc; /* Opcional: borde alrededor de los círculos */
+    }
+
+    .card a {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #000;
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #444;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 50px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Nobleza </h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="diseño.html">Diseños</a> <!-- Aquí abre tu página de diseños -->
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div>
+      <h2>Playeras con Estilo</h2>
+      <p>Diseños únicos, calidad premium y un look que marca la diferencia.</p>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section class="productos" id="productos">
+    <h2>Nuestras Playeras</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="listos/sudadera.png" alt="Playera 1">
+        <h3>Sudadera</h3>
+        <p>Sudadera casual, suave y duradera, ideal para mantenerte cómodo y con estilo en cualquier ocasión.</p>
+        <div class="colores">
+          <span class="color" style="background-color: white;"></span>
+          <span class="color" style="background-color: black;"></span>
+          <span class="color" style="background-color: #C2B280;"></span> <!-- Color Kika -->
+        </div>
+        <a href="diseño.html">No Disponible</a>
+      </div>
+      <div class="card">
+        <img src="listos/negro.png" alt="Playera 2">
+        <h3>Playera Urbana</h3>
+        <p>Playera blanca de algodón, suave y cómoda, perfecta para el uso diario con un estilo clásico y versátil.</p>
+        <div class="colores">
+          <span class="color" style="background-color: white;"></span>
+          <span class="color" style="background-color: black;"></span>
+          <span class="color" style="background-color: #C2B280;"></span> <!-- Color Kika -->
+        </div>
+        <a href="diseño.html">Disponible</a> <!-- Este es el enlace al diseño -->
+      </div>
+      <div class="card">
+        <img src="listos/blanco.png" alt="Playera 3">
+        <h3>Playera Deportiva</h3>
+        <p>Playera blanca de poliéster, fresca y resistente, ideal para cualquier ocasión y lista para personalizar.</p>
+        <div class="colores">
+          <span class="color" style="background-color: white;"></span>
+          <span class="color" style="background-color: black;"></span>
+          
+        </div>
+        <a href="diseño.html">No Disponible</a> <!-- Este es el enlace al diseño -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <p>&copy; 2025 Nobleza - Solo imágenes de referencia disponibles, para ordenar aquí los contactos.</p>
+    <p>Email: contacto@nobleza.com | Tel: +52 985 124 6274</p>
+  </footer>
+
+</body>
+</html>
