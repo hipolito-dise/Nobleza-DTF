@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi DISEÑOS</title>
+  <style>
+    a { display: block; text-align: center; margin: 20px; color: #e60023; font-weight: bold; text-decoration: none; }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fcfcfb;
+      text-align: center;
+    }
+    header {
+      background: #111111;
+      color: white;
+      padding: 15px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Contenedor principal con las tres columnas */
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 50px auto;
+    }
+
+    /* Columnas de imágenes a los lados */
+    .lado {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .lado img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Contenido central (menú) */
+    .contenido-central {
+      text-align: center;
+    }
+
+    nav a {
+      display: block;
+      margin: 30px auto;
+      padding: 15px;
+      width: 300px;
+      background: #0734fa;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #b8001b;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    📌 MENU DE DISEÑOS
+  </header>
+<br>
+<br>
+<br>
+  <div class="contenedor">
+    <!-- Columna izquierda -->
+    <div class="lado izquierda">
+      <img src="listos/cuello.png" alt="Imagen 1">
+      <img src="listos/logo.png" alt="Imagen 2">
+      <img src="listos/invertido.png" alt="Imagen 3">
+      <img src="listos/pecho.png" alt="Imagen 4">
+      
+
+
+    </div>
+
+    <!-- Contenido central -->
+    <div class="contenido-central">
+      <nav>
+        <a href="logos.html">LOGOS O MANGAS</a>
+        <a href="pecho.html">PECHO</a>
+        <a href="espalda.html">ESPALDA Y FRONTAL</a>
+        <a href="cuello.html">INVERTIDO Y CUELLO</a>
+      </nav>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="lado derecha">
+      <img src="listos/espalda.png" alt="Imagen 5">
+      <img src="listos/espalda alta.png" alt="Imagen 6">
+      <img src="listos/frontal.png" alt="Imagen 7">
+      <img src="listos/ambos.png" alt="Imagen 8">
+    </div>
+  </div>
+   <a href="principal.html"
+  >⬅ Volver al Menú</a>
+</body>
+</html>
